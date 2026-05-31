@@ -29,13 +29,14 @@ const changeableBody = `
         </ul>
     </section>
 
+    <!-- 프로젝트 상세 내용에 따라 하이퍼 링크 적용  -->
     <section>
-        <h2>경력 (Experience)</h2>
+        <h2>프로젝트 (Projects)</h2>
         <div class="project-item">
-            <span class="project-title">롯데 하이마트 - 지게차 기사</span> (2003.06 ~ 2022.07)
+            <span class="project-date">(2026.05 ~ 진행중)</span>
+            <div class="project-title"><strong>나만의 포트폴리오 웹사이트</strong></div>
             <ul>
-            <!-- 프로젝트 상세 내용에 따라 하이퍼 링크 적용  -->
-                <li>GitHub Pages를 이용한 개인 정적 블로그 및 이력서 배포</li>
+                <li>GitHub Pages를 이용한 개인 정적 블로그 및 이력서 배포 (<a href="https://nakkwonko.github.io" target="_blank">사이트 방문하기</a>)</li>
                 <li>HTML과 CSS를 활용한 시맨틱 마크업 및 반응형 웹 디자인 구현</li>
             </ul>
         </div>

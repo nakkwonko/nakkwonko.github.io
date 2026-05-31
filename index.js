@@ -28,7 +28,8 @@ const changeableBody = `
         <div class="project-item">
             <span class="project-title">나만의 포트폴리오 웹사이트</span> (2026.05 ~ 진행 중)
             <ul>
-                <li>GitHub Pages를 이용한 개인 정적 블로그 및 이력서 배포</li>
+            <!-- 프로젝트 산세 내용에 따라 하이퍼 링크 적용  -->
+                <li>GitHub Pages를 이용한 개인 정적 블로그 및 이력서 배포 (<a href="https://nakkwonko.github.io" target="_blank">사이트 방문하기</a>)</li>
                 <li>HTML과 CSS를 활용한 시맨틱 마크업 및 반응형 웹 디자인 구현</li>
             </ul>
         </div>

@@ -41,6 +41,34 @@ const changeableBody = `
             </ul>
         </div>
     </section>
+
+// ====================================================
+// 1. Data Rendering Functions
+// ====================================================
+function loadResumeData() {
+    const main = document.getElementById('resume-main');
+    // Your code to load details into the main section goes here
+}
+
+// ====================================================
+// 2. Event Listeners (Triggers when page loads)
+// ====================================================
+document.addEventListener("DOMContentLoaded", function () {
+    // Run your resume data builder function
+    loadResumeData();
+
+    // Fallback forcing the profile frame cuts
+    const profileImg = document.querySelector(".profile-photo img");
+    if (profileImg) {
+        profileImg.style.width = "220px";
+        profileImg.style.height = "220px";
+        profileImg.style.borderRadius = "50%";
+        profileImg.style.objectFit = "cover";
+        profileImg.style.objectPosition = "center top";
+        profileImg.style.border = "2px solid #e5e7eb";
+        profileImg.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.1)";
+    }
+});
 `;
 
 // 3. 찾아온 <main> 태그 내부에 준비된 내용을 주입합니다.

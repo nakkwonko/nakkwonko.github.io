@@ -41,23 +41,15 @@ const changeableBody = `
             </ul>
         </div>
     </section>
+`;
 
-// ====================================================
-// 1. Data Rendering Functions
-// ====================================================
-function loadResumeData() {
-    const main = document.getElementById('resume-main');
-    // Your code to load details into the main section goes here
+// 3. 찾아온 <main> 태그 내부에 준비된 내용을 주입합니다.
+if (mainContainer) {
+mainContainer.innerHTML = changeableBody;
 }
 
-// ====================================================
-// 2. Event Listeners (Triggers when page loads)
-// ====================================================
+// 4. 페이지 로드 시 프로필 이미지를 강제로 완벽한 원형으로 자르는 코드
 document.addEventListener("DOMContentLoaded", function () {
-    // Run your resume data builder function
-    loadResumeData();
-
-    // Fallback forcing the profile frame cuts
     const profileImg = document.querySelector(".profile-photo img");
     if (profileImg) {
         profileImg.style.width = "220px";
@@ -69,7 +61,5 @@ document.addEventListener("DOMContentLoaded", function () {
         profileImg.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.1)";
     }
 });
-`;
 
-// 3. 찾아온 <main> 태그 내부에 준비된 내용을 주입합니다.
-mainContainer.innerHTML = changeableBody;
+
